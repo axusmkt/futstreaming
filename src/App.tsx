@@ -118,19 +118,6 @@ export default function App() {
       </AnimatePresence>
 
       <main className="container mx-auto px-6 md:px-8 mt-16 relative z-10">
-        
-        {/* Mobile Search Input (Refined) */}
-        <div className="md:hidden relative mb-10 group">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500 group-focus-within:text-brand-neon" />
-          <input
-            type="text"
-            placeholder="Buscar canais..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-white/5 border border-white/5 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-brand-neon/40 transition-all placeholder:text-neutral-600"
-          />
-        </div>
-
         <CategoryNav activeCategory={activeCategory} setActiveCategory={setActiveCategory} />
 
         <div className="space-y-24">
